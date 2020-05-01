@@ -39,10 +39,6 @@ const titleClickHandler = function(event) {
   article.classList.add("active");
 };
 
-const links = document.querySelectorAll(".titles a");
-for (let link of links) {
-  link.addEventListener("click", titleClickHandler);
-}
 
 {
   const optArticleSelector = ".post",
@@ -81,4 +77,9 @@ for (let link of links) {
     titleList.innerHTML = html;
   }
   generateTitleLinks();
+}
+
+const links = document.querySelectorAll(".titles a");
+for (let link of links) {
+  link.addEventListener("click", titleClickHandler);
 }
