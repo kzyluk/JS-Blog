@@ -74,7 +74,8 @@ const titleClickHandler = function(event) {
       html = html + linkHTML;
       console.log(html);
     }
-    titleList.innerHTML = html;
+    titleList.insertAdjacentHTML('afterend', html);
+    //console.log(html);
   }
   generateTitleLinks();
 }
