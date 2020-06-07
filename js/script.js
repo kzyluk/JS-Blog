@@ -178,7 +178,7 @@ function generateAuthors (){
   }
 }
 generateAuthors ();
-
+ 
 function authorClickHandler(event) {
   event.preventDefault();
   const clickedElement = this;
